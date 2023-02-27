@@ -4,36 +4,43 @@ table{
     font-family: 'Righteous', cursive;
     
 }
-@media screen and (min-width: 37.5em){
-.colm {
+
+.img {
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-gap: 15px;
+    margin-top: 15px;
+}
+@media screen and (min-width: 600px){
+
+    .img {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        grid-gap: 15px;
+        margin-top: 15px;
+    }
+
+    .colm {
     display: grid;
     grid-template-columns: 1fr 1fr;
 }
 }
 
-@media screen and (min-width: 48em){
-.img {
-    display: grid;
-    grid-template-columns: 1fr 1fr  ;
-    grid-gap: 15px;
-    margin-top: 15px;
-}
+@media screen and (min-width: 700px){
+
+    .img {
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr;
+        grid-gap: 15px;
+        margin-top: 15px;
+    }
 }
 
-@media screen and (min-width: 37.5em){
-.img {
-    display: grid;
-    grid-template-columns:  1fr ;
-    grid-gap: 15px;
-    margin-top: 15px;
+img { 
+    max-width:100%;
+    height: auto;
 }
-}
-.img {
-    display: grid;
-    grid-template-columns:  1fr 1fr 1fr;
-    grid-gap: 15px;
-    margin-top: 15px;
-}
+
 
 
 
