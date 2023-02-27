@@ -1,0 +1,79 @@
+@import url('https://fonts.googleapis.com/css2?family=Righteous&display=swap');
+table{
+    width: 80%;
+    font-family: 'Righteous', cursive;
+    
+}
+thead tr{
+    background-image: linear-gradient(#6acf6a, #57b50a);
+    color: gold;
+    
+}
+th{
+    border: 1px solid black;
+    background-image: linear-gradient(#d03542, #91010d);
+    padding: 10px;
+}
+td{
+    border: 1px solid black;
+    background-image: linear-gradient(#373837, #060606);
+    color: gold;
+    padding: 20px;
+}
+.valo{
+    font-family: 'Righteous', cursive;
+    background-image: linear-gradient(#373837, #060606);
+    
+    color: red;
+    padding: 20px
+    
+}
+.h1{
+    font-family: 'Righteous', cursive;
+    background-image: linear-gradient(#373837, #060606);
+    color: red;
+    padding: 10px
+
+}
+p{
+    font-family: 'Righteous', cursive;
+    background-image: linear-gradient(#373837, #060606);
+    color: white;
+    padding: 10px;
+    
+}
+body{
+    background-image: linear-gradient(#373837, #060606); 
+}
+fieldset{
+    color: white
+}
+@import url('https://fonts.googleapis.com/css2?family=Righteous&display=swap');
+@media screen and (max-width: 600px) {
+    table thead {
+      border: none;
+      clip: rect(0 0 0 0);
+      height: 1px;
+      margin: -1px;
+      overflow: hidden;
+      padding: 0;
+      position: absolute;
+      width: 1px;
+    }
+    
+    table tr {
+      border-bottom: 3px solid #ddd;
+      display: block;
+    }
+    
+    table td {
+      border-bottom: 1px solid #ddd;
+      display: block;
+      text-align: right;
+    }
+    
+    table td::before {
+      content: attr(data-label);
+      float: left;
+    }
+  }
